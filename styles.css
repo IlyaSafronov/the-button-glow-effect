@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --transition: 0.25s;
+  --spark: 1.8s;
+  --hue: 245;
+}
+
+body {
+  --active: 0;
+  background: hsl(var(--hue) calc(var(--active)*97%)6%);
+  padding: 2rem;
+  place-content: center;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  transition: background var(--transition);
+  /* overflow: hidden; */
+}
+
+h1, 
+p {
+  margin: 1.5rem auto 2rem;
+  max-width: 640px;
+  color: hsl(0 0% 80%);
+  text-wrap: balance;
+  text-align: center;
+  line-height: 1.6;
+}
+
+h1 {
+  margin: 1.5rem auto;
+  line-height: 1.1;
+}
+
+p {
+  margin: 1.5rem auto 2rem;
+}
+
+video {
+  margin-inline: auto;
+  margin-block: 2rem;
+  display: block;
+  max-inline-size: 700px;
+  inline-size: 100%;
+}
